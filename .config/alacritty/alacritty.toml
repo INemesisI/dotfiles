@@ -1,0 +1,10 @@
+[window]
+opacity = 0.95
+blur = true
+decorations = "None"
+startup_mode = "Fullscreen"
+
+[font]
+size = 12
+normal = { family = "JetBrainsMono NF", style = "Regular"}
+
