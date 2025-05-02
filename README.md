@@ -13,11 +13,12 @@ Ensure you have the following installed on your system:
 First, check out the dotfiles repo in your $HOME directory using git
 ``` bash
 cd ~/
-git clone git@github.com/inemesisi/dotfiles.git
-cd dotfiles
+git clone git@github.com/inemesisi/dotfiles.git .dotfiles
 ```
 
 then use GNU stow to create symlinks
 ``` bash
+cd .dotfiles
 stow .
+cd ..
 ```
