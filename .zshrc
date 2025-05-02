@@ -41,6 +41,7 @@ alias grep='grep --color=auto'
 alias less='less -R'
 alias ls='ls -h --color=auto'
 alias la='ls -lah --color=auto'
+alias cg='cd $(git rev-parse --show-toplevel)'
 
 # Exports
 export EDITOR="hx"
@@ -51,5 +52,6 @@ export LC_ALL="C.UTF-8"
 export LC_CTYPE="C.UTF-8"
 export LC_MESSAGES="C.UTF-8"
 
-export PATH=$HOME/bin:$PATH
+# Custom system specific environment variables
+source $HOME/.zsh_env_vars
 
