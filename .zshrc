@@ -11,10 +11,16 @@ zinit ice from"gh-r" as"command" atload'eval "$(starship init zsh)"'
 zinit load starship/starship
 
 # Plugins
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-zinit light jeffreytse/zsh-vi-mode
+zinit for \
+    light-mode \
+  zsh-users/zsh-autosuggestions \
+    light-mode \
+  zdharma-continuum/fast-syntax-highlighting \
+  zdharma-continuum/history-search-multi-word \
+    light-mode \
+  zsh-users/zsh-completions \
+    light-mode \
+  jeffreytse/zsh-vi-mode
 
 # Load completions
 autoload -Uz compinit && compinit
@@ -51,7 +57,4 @@ export LANG="C.UTF-8"
 export LC_ALL="C.UTF-8"
 export LC_CTYPE="C.UTF-8"
 export LC_MESSAGES="C.UTF-8"
-
-# Custom system specific environment variables
-source $HOME/.zsh_env_vars
 
