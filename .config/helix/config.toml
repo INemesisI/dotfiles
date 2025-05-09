@@ -1,22 +1,36 @@
 theme = "onedark_transparent"
 
 [editor]
-bufferline = "multiple"
 color-modes = true
 line-number = "relative"
 end-of-line-diagnostics = "hint"
 auto-format = true
+rulers = [80]
 
 [editor.auto-save]
 focus-lost = true
 
 [editor.indent-guides]
-render = false
+render = true
 character = "┊" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 0
 
+[editor.file-picker]
+git-ignore = true
+hidden = false
+
 [editor.soft-wrap]
 enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator", "diagnostics"]
+center = ["version-control", "workspace-diagnostics"]
+right = ["selections", "primary-selection-length", "register", "position", "file-encoding", "total-line-numbers", "position-percentage"]
 
 # [editor.whitespace]
 # render = "all"
